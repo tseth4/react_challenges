@@ -1,0 +1,39 @@
+// SCSS variables
+$accordion-font-family: sans-serif;
+$icon-size: 8px;
+$border-width: 2px;
+$rotation-angle: 45deg;
+
+.accordion {
+  font-family: $accordion-font-family;
+
+  &__title {
+    cursor: pointer;
+  }
+
+  &__content {
+    &--inactive {
+      display: none;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__icon {
+    border: solid currentcolor;
+    border-width: 0 $border-width $border-width 0;
+    display: inline-block;
+    height: $icon-size;
+    pointer-events: none;
+    transform: translateY(-2px) rotate($rotation-angle);
+    width: $icon-size;
+    cursor: pointer;
+
+    // SCSS nesting example
+    &--rotated {
+      transform: translateY(2px) rotate(-135deg);
+    }
+  }
+}
