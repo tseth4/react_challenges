@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Navigation from './components/Navigation';
 import Home from './pages/Home';
 // import About from './pages/About';
-import Contact from './pages/Contact';
+// import Contact from './pages/Contact';
 import Accordion  from './pages/accordion/Index';
 import './App.css';
+import UseMemoDemo from './pages/MemoDemo/UseMemoDemo';
+import UseCallBackDemo from './pages/CallbackDemo/UseCallBackDemo';
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/accordion" element={<Accordion />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/memo" element={<UseMemoDemo />} />
+            <Route path="/callback" element={<UseCallBackDemo />} />
           </Routes>
         </main>
       </div>
