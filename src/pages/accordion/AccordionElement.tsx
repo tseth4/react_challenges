@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import styles from './Accordion.module.scss'
 import clsx from 'clsx';
 import type { AccordionItem } from './Index';
+import { useRenderCount } from '../../hooks/useRenderCount';
 
 interface AccordionElementProps {
   item: AccordionItem
 }
 
 const AccordionElement: React.FC<AccordionElementProps> = ({ item }) => {
+  useRenderCount("accordion element: " + item.title)
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>

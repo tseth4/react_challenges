@@ -5,6 +5,7 @@ import Home from './pages/Home';
 // import About from './pages/About';
 // import Contact from './pages/Contact';
 import Accordion  from './pages/accordion/Index';
+import Tabs  from './pages/Tabs/Index';
 import './App.css';
 import UseMemoDemo from './pages/MemoDemo/UseMemoDemo';
 import UseCallBackDemo from './pages/CallbackDemo/UseCallBackDemo';
@@ -20,6 +21,7 @@ function App() {
             <Route path="/accordion" element={<Accordion />} />
             <Route path="/memo" element={<UseMemoDemo />} />
             <Route path="/callback" element={<UseCallBackDemo />} />
+            <Route path="/tabs" element={<Tabs />} />
           </Routes>
         </main>
       </div>
