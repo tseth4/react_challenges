@@ -10,6 +10,7 @@ import './App.css';
 import UseMemoDemo from './pages/MemoDemo/UseMemoDemo';
 import UseCallBackDemo from './pages/CallbackDemo/UseCallBackDemo';
 import FlightBookingIndex from './pages/FlightBooking/Index';
+import TableGeneratorIndex from './pages/TableGenerator/Index';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/callback" element={<UseCallBackDemo />} />
             <Route path="/tabs" element={<Tabs />} />
             <Route path="/flight-booking" element={<FlightBookingIndex />} />
+            <Route path="/table-generator" element={<TableGeneratorIndex />} />
           </Routes>
         </main>
       </div>

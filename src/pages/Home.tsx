@@ -1,10 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
     <div className="page">
       <h1>Welcome to React Challenges</h1>
       <p>This is the home page of your application.</p>
+      
+      <div className="challenges">
+        <h2>Available Challenges:</h2>
+        <div className="challenge-links">
+          <Link to="/accordion" className="challenge-link">Accordion Component</Link>
+          <Link to="/memo" className="challenge-link">UseMemo Demo</Link>
+          <Link to="/callback" className="challenge-link">UseCallback Demo</Link>
+          <Link to="/tabs" className="challenge-link">Tabs Component</Link>
+          <Link to="/flight-booking" className="challenge-link">Flight Booking</Link>
+          <Link to="/table-generator" className="challenge-link">Table Generator</Link>
+        </div>
+      </div>
+      
       <div className="features">
         <h2>Features:</h2>
         <ul>
