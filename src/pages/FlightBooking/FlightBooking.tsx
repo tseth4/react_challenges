@@ -110,7 +110,7 @@ const FlightBooking: React.FC<FlighBookingProps> = () => {
       {formData.trip === "Round" && (
         <label>
           Return Date
-          <input name="returnDate" type="date" value={formData.returnDate || ''} onChange={handleChange}></input>
+          <input name="returnDate" type="date" value={formData.returnDate} onChange={handleChange}></input>
           {errors.returnDate && <span style={{ color: "red" }}>{errors.returnDate}</span>}
         </label>
       )}
