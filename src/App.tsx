@@ -11,6 +11,7 @@ import UseMemoDemo from './pages/MemoDemo/UseMemoDemo';
 import UseCallBackDemo from './pages/CallbackDemo/UseCallBackDemo';
 import FlightBookingIndex from './pages/FlightBooking/Index';
 import TableGeneratorIndex from './pages/TableGenerator/Index';
+import EventBubblingIndex from './pages/EventBubbling/Index';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/tabs" element={<Tabs />} />
             <Route path="/flight-booking" element={<FlightBookingIndex />} />
             <Route path="/table-generator" element={<TableGeneratorIndex />} />
+            <Route path="/event-bubbling" element={<EventBubblingIndex />} />
           </Routes>
         </main>
       </div>
