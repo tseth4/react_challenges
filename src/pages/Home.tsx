@@ -17,6 +17,7 @@ const Home: React.FC = () => {
           <Link to="/flight-booking" className="challenge-link">Flight Booking</Link>
           <Link to="/table-generator" className="challenge-link">Table Generator</Link>
           <Link to="/event-bubbling" className="challenge-link">Event Bubbling Demo</Link>
+          <Link to="/todo-list" className="challenge-link">Todo List Challenge</Link>
         </div>
       </div>
       
