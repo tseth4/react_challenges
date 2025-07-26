@@ -18,26 +18,34 @@ You're given some existing HTML for a Todo List app. Add the following functiona
 
 ## Starting HTML Structure
 
-```html
-<div class="todo-list">
-  <h2>Todo List</h2>
-  
-  <div class="todo-input">
-    <input type="text" placeholder="Enter a new task..." />
-    <button>Submit</button>
-  </div>
-  
-  <ul class="todo-items">
-    <li class="todo-item">
-      <span>Example task</span>
-      <button>Delete</button>
-    </li>
-    <li class="todo-item">
-      <span>Another example task</span>
-      <button>Delete</button>
-    </li>
-  </ul>
-</div>
+```jsx
+export default function App() {
+  return (
+    <div>
+      <h1>Todo List</h1>
+      <div>
+        <input type="text" placeholder="Add your task" />
+        <div>
+          <button>Submit</button>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <span>Walk the dog</span>
+          <button>Delete</button>
+        </li>
+        <li>
+          <span>Water the plants</span>
+          <button>Delete</button>
+        </li>
+        <li>
+          <span>Wash the dishes</span>
+          <button>Delete</button>
+        </li>
+      </ul>
+    </div>
+  );
+}
 ```
 
 ## Expected Functionality
