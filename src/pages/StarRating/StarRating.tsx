@@ -1,25 +1,26 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import clsx from 'clsx';
 import styles from "./StarRating.module.scss"
 
 interface StarRatingProps {
   maxStars: number;
   filledStars: number;
+  onClick: (index: number) => void;
 }
 
 interface StarProps {
   isFilled: boolean;
+  onClick: () => void;
 }
 
-const Star: React.FC<StarProps> = ({ isFilled }) => {
-  const [fill, setFill] = useState(isFilled);
+const Star: React.FC<StarProps> = ({ isFilled, onClick }) => {
   return (
     <>
       <svg
-        onClick={() => setFill((prev) => !prev)}
+        onClick={onClick}
         xmlns="http://www.w3.org/2000/svg"
         className={clsx(styles.star_rating__icon, {
-          [styles.star_rating__icon__filled]: fill,
+          [styles.star_rating__icon__filled]: isFilled,
         })} fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -34,12 +35,12 @@ const Star: React.FC<StarProps> = ({ isFilled }) => {
   )
 }
 
-const StarRating: React.FC<StarRatingProps> = ({ maxStars, filledStars }) => {
+const StarRating: React.FC<StarRatingProps> = ({ maxStars, filledStars, onClick }) => {
   return (
     <div className={styles.star_rating}>
       {Array.from({ length: maxStars }, (_, i) => (
         <div key={i}>
-          <Star isFilled={i < filledStars} />
+          <Star onClick={() => onClick(i + 1)} isFilled={i < filledStars} />
         </div>
       ))}
 

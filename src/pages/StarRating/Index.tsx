@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import StarRating from './StarRating';
 
 interface IndexProps {
@@ -6,9 +6,13 @@ interface IndexProps {
 }
 
 const Index: React.FC<IndexProps> = ({ }) => {
+  const [filledStars, setFilledStars] = useState(0)
+  const handleMaxStars = (index: number) => {
+    setFilledStars(index)
+  }
   return (
     <>
-      <StarRating maxStars={5} filledStars={3}/>
+      <StarRating onClick={handleMaxStars} maxStars={5} filledStars={filledStars} />
     </>
   );
 }
