@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 // import About from './pages/About';
 // import Contact from './pages/Contact';
-import Accordion  from './pages/accordion/Index';
-import Tabs  from './pages/Tabs/Index';
+import Accordion from './pages/accordion/Index';
+import Tabs from './pages/Tabs/Index';
 import './App.css';
 import UseMemoDemo from './pages/MemoDemo/UseMemoDemo';
 import UseCallBackDemo from './pages/CallbackDemo/UseCallBackDemo';
@@ -13,6 +13,8 @@ import FlightBookingIndex from './pages/FlightBooking/Index';
 import TableGeneratorIndex from './pages/TableGenerator/Index';
 import EventBubblingIndex from './pages/EventBubbling/Index';
 import TodoListIndex from './pages/TodoList/Index';
+import Customization from "./pages/Customization/Index"
+import Debounce from './pages/Debounce/Index';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
             <Route path="/table-generator" element={<TableGeneratorIndex />} />
             <Route path="/event-bubbling" element={<EventBubblingIndex />} />
             <Route path="/todo-list" element={<TodoListIndex />} />
+            <Route path="/custom" element={<Customization />} />
+            <Route path="/debounce" element={<Debounce />} />
           </Routes>
         </main>
       </div>

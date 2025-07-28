@@ -18,6 +18,8 @@ const Home: React.FC = () => {
           <Link to="/table-generator" className="challenge-link">Table Generator</Link>
           <Link to="/event-bubbling" className="challenge-link">Event Bubbling Demo</Link>
           <Link to="/todo-list" className="challenge-link">Todo List Challenge</Link>
+          <Link to="/custom" className="challenge-link">Cusotmization</Link>
+          <Link to="/debounce" className="challenge-link">Debounce</Link>
         </div>
       </div>
       
