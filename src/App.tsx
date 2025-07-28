@@ -15,6 +15,7 @@ import EventBubblingIndex from './pages/EventBubbling/Index';
 import TodoListIndex from './pages/TodoList/Index';
 import Customization from "./pages/Customization/Index"
 import Debounce from './pages/Debounce/Index';
+import StarRating from './pages/StarRating/Index';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/todo-list" element={<TodoListIndex />} />
             <Route path="/custom" element={<Customization />} />
             <Route path="/debounce" element={<Debounce />} />
+            <Route path="/star-rating" element={<StarRating />} />
           </Routes>
         </main>
       </div>
