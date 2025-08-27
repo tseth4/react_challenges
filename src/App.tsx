@@ -16,6 +16,7 @@ import TodoListIndex from './pages/TodoList/Index';
 import Customization from "./pages/Customization/Index"
 import Debounce from './pages/Debounce/Index';
 import StarRating from './pages/StarRating/Index';
+import ResponsiveImages from './pages/ResponsiveImages/Index';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/custom" element={<Customization />} />
             <Route path="/debounce" element={<Debounce />} />
             <Route path="/star-rating" element={<StarRating />} />
+            <Route path="/responsive-images" element={<ResponsiveImages />} />
           </Routes>
         </main>
       </div>

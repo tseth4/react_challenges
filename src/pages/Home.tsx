@@ -20,6 +20,8 @@ const Home: React.FC = () => {
           <Link to="/todo-list" className="challenge-link">Todo List Challenge</Link>
           <Link to="/custom" className="challenge-link">Cusotmization</Link>
           <Link to="/debounce" className="challenge-link">Debounce</Link>
+          <Link to="/star-rating" className="challenge-link">Star Rating</Link>
+          <Link to="/responsive-images" className="challenge-link">Responsive Images</Link>
         </div>
       </div>
       
