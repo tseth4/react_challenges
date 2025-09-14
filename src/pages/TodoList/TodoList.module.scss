@@ -1,0 +1,169 @@
+.todo-list-challenge {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .challenge-description {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    
+    h2 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+    
+    h3 {
+      color: #555;
+      margin: 15px 0 10px 0;
+    }
+    
+    ul {
+      margin-left: 20px;
+      
+      li {
+        margin-bottom: 5px;
+        line-height: 1.5;
+      }
+    }
+  }
+  
+  .challenge-controls {
+    text-align: center;
+    margin-bottom: 30px;
+    
+    .toggle-solution {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      
+      &:hover {
+        background: #0056b3;
+      }
+    }
+  }
+  
+  .challenge-demo {
+    margin-bottom: 40px;
+    
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    .starter-note {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .solution-demo {
+    border-top: 2px solid #007bff;
+    padding-top: 30px;
+    
+    h2 {
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Basic todo list styles
+.todo-list {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      
+      &:hover {
+        background: #218838;
+      }
+    }
+  }
+  
+  .todo-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    .todo-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      span {
+        flex: 1;
+        margin-right: 10px;
+      }
+      
+      button {
+        padding: 5px 10px;
+        background: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        
+        &:hover {
+          background: #c82333;
+        }
+      }
+    }
+  }
+  
+  .empty-state {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-top: 20px;
+  }
+} 

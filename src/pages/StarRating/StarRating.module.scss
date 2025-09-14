@@ -1,0 +1,16 @@
+.star_rating {
+  font-family: sans-serif;
+  display: flex;
+
+  &__icon {
+    --icon-size: 32px;
+
+    cursor: pointer;
+    height: var(--icon-size);
+    width: var(--icon-size);
+  }
+
+  &__icon__filled {
+    fill: yellow;
+  }
+}

@@ -1,0 +1,11 @@
+/* styles.css */
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.custom-card {
+  background-color: palevioletred;
+  color: white;
+}

@@ -1,0 +1,612 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  > p {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+
+  button {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #3498db;
+    background: white;
+    color: #3498db;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+
+    &:hover {
+      background: #3498db;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    }
+
+    &.active {
+      background: #3498db;
+      color: white;
+      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    }
+  }
+}
+
+.content {
+  margin-bottom: 3rem;
+}
+
+.example {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+
+  h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+  }
+
+  p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+// Problem examples
+.problemContainer {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #fff5f5;
+  border: 2px solid #fed7d7;
+  border-radius: 8px;
+
+  h3 {
+    color: #e53e3e;
+    margin-bottom: 1rem;
+  }
+}
+
+.brokenContainer {
+  width: 300px;
+  border: 2px solid #e53e3e;
+  padding: 1rem;
+  background: white;
+}
+
+.overflowingContent {
+  h4 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  gap: 1rem;
+  border: 2px solid #e53e3e;
+  padding: 1rem;
+  background: white;
+}
+
+.flexItem {
+  background: #e6fffa;
+  padding: 0.5rem;
+  border: 1px solid #38b2ac;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.flexItemOverflow {
+  flex: 1;
+  background: #fff5f5;
+  padding: 0.5rem;
+  border: 1px solid #e53e3e;
+  border-radius: 4px;
+  
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+.flexItemNoMinWidth {
+  flex: 1;
+  background: #fff5f5;
+  padding: 0.5rem;
+  border: 1px solid #e53e3e;
+  border-radius: 4px;
+  
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+.flexItemWithMinWidth {
+  flex: 1;
+  min-width: 0;
+  background: #f0fff4;
+  padding: 0.5rem;
+  border: 1px solid #38a169;
+  border-radius: 4px;
+  
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+.flexItemWithOverflow {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  background: #f0fff4;
+  padding: 0.5rem;
+  border: 1px solid #38a169;
+  border-radius: 4px;
+  
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+// Solution examples
+.solutionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.solutionCard {
+  background: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0.5rem 0 0 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+}
+
+.containerExample {
+  width: 200px;
+  height: 80px;
+  border: 2px solid #3498db;
+  margin: 0 auto 1rem;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.hiddenOverflow {
+  overflow: hidden;
+  width: 100%;
+  
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+.scrollOverflow {
+  overflow: scroll;
+  width: 100%;
+  
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+.ellipsisOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  
+  p {
+    margin: 0;
+  }
+}
+
+.wordWrapOverflow {
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+  
+  p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+}
+
+.codeBlock {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+// Flex tricks
+.flexTrick {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+}
+
+// Vehicle examples
+.vehicleExample {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #dee2e6;
+
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+}
+
+.vehicleContainer {
+  display: flex;
+  gap: 1rem;
+  border: 2px solid #3498db;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+}
+
+.vehicleImage {
+  flex-shrink: 0;
+  width: 100px;
+  height: 80px;
+  background: #e9ecef;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagePlaceholder {
+  font-size: 2rem;
+}
+
+.vehicleDetails {
+  flex: 1;
+  min-width: 0;
+  
+  h4 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+.vehicleDetailsScrollable {
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  
+  h4 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+.vehicleDetailsEllipsis {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+  h4 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  p {
+    margin: 0;
+  }
+}
+
+.vehicleDetailsWrapped {
+  flex: 1;
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  
+  h4 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+}
+
+// Code comparison
+.codeComparison {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #2c3e50;
+  border-radius: 8px;
+  color: white;
+
+  h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+  }
+}
+
+.codeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.codeColumn {
+  background: #34495e;
+  padding: 1rem;
+  border-radius: 4px;
+
+  h4 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  pre {
+    margin: 0;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    color: #ecf0f1;
+  }
+}
+
+// Explanations
+.explanation {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  margin: 1.5rem 0;
+
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.75rem;
+      padding-left: 1.5rem;
+      position: relative;
+
+      &::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        color: #3498db;
+        font-weight: bold;
+      }
+
+      strong {
+        color: #2c3e50;
+      }
+
+      code {
+        background: #e9ecef;
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// Best practices
+.bestPractices {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+.practicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.practiceCard {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.75rem;
+      padding-left: 1.5rem;
+      position: relative;
+
+      &::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: #2ecc71;
+        font-weight: bold;
+      }
+
+      strong {
+        color: #f1c40f;
+      }
+
+      code {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  .example {
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .solutionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .codeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .practicesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicleContainer {
+    flex-direction: column;
+  }
+
+  .vehicleImage {
+    width: 100%;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .example {
+    padding: 1rem;
+  }
+
+  .bestPractices {
+    padding: 1.5rem;
+  }
+}
